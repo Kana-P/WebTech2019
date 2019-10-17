@@ -7,18 +7,46 @@
     <title>Environmental Problems and Pollution</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.mi
 n.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
         body {
-            background-image: radial-gradient(circle, #657688, #4b5d73, #34455f, #1d2e4b, #051937);
             text-align: center;
         }
-        
+
+        header {
+            position: relative;
+            background-image: radial-gradient(#657688, #4b5d73, #34455f, #1d2e4b, #051937);
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
         .container {
-            background: hsla(0, 100%, 100%, 0.5);
             position: absolute;
             padding: 10px;
             width: 50%;
@@ -26,11 +54,20 @@ n.css">
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
+            z-index: 2;
         }
     </style>
 </head>
 
 <body>
+    <!-- video background -->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline autoplay muted loop>
+            <source src="video/Forest.mov">
+        </video>
+    </header>
+
     <div class="container">
         <h1>EnviProblem</h1><br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide, quantum, inquam, fallare,
