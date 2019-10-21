@@ -22,6 +22,10 @@ n.css">
             background: lightcyan;
         }
 
+        .examhead {
+            background: lightcyan;
+        }
+
         ::-webkit-scrollbar-thumb {
             background-image: linear-gradient(#50c2ff, #5dd2ff, #73e1ff, #8eefff, #aafcff);
         }
@@ -45,7 +49,8 @@ n.css">
             </li>
         </ul>
     </nav>
-
+    <!-- ปุ่ม To Top -->
+    <a id="button"></a>
     <!-- หัวข้อ -->
     <div class="container-fluid head">
         <div class="row h-100">
@@ -102,11 +107,18 @@ n.css">
             Qui est in parvis malis. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Quis
             non odit sordidos, vanos, leves, futtiles? Nec vero intermittunt aut admirationem earum rerum, quae sunt ab
             antiquis repertae, aut investigationem novarum.</p><br>
+    </div>
 
-        <center>
-            <h1>ตัวอย่างผลกระทบต่างๆ</h1>
-        </center>
-        <!-- ตัวอย่างต่างๆ -->
+    <!-- ตัวอย่างต่างๆ -->
+    <div class="container-fluid examhead">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <h1 style="font-size: 48px;">ตัวอย่างผลกระทบต่างๆ</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="row">
             <div class="col-md example" onclick="location.href='#';">
                 <h3>Title</h3>
@@ -136,7 +148,8 @@ n.css">
             </div>
         </div>
     </div>
-
+    <!-- External Script for To Top Button -->
+    <script src="scripts.js"></script>
 </body>
 
 </html>
