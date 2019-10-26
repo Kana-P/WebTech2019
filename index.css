@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Athiti', sans-serif;
+    background: linear-gradient(#051937,#010059, #004d7a);
+}
+.slide {
+    width: 99vw;
+    height: 100vh;
+  }
+  .one {
+    background: url('bgearth.svg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    color: rgb(222, 223, 224);
+  }
+  .two {
+    background: url('bgsolid.svg');
+    background-size: 1076px 680px;
+    color: rgb(222, 223, 224);
+  }
+  .three {
+    background: url('bgair.svg');
+    position: relative;
+    background-size: cover;
+    color: rgb(222, 223, 224);
+  }
+  .four {
+    background: url('bgwater.svg');
+    position: relative;
+    color: rgb(222, 223, 224);
+  }
+  .five {
+    color: rgb(222, 223, 224);
+  }
+  .bodyy{
+    padding: 150;
+  }
+  .topic{
+    font-size: 56pt;
+    padding: 50;
+    text-align: center;
+    height: 150;
+  }
+  .text{
+    font-size: 18pt;
+    text-align: center;
+    height: 150;
+  }
+  .body2{
+    padding: 180;
+  }
+  .topic2{
+    font-size: 56pt;
+    padding: 50;
+    text-align: left;
+    height: 150;
+  }
+  .body3{
+    padding: 180;
+  }
+  .topic3{
+    font-size: 56pt;
+    padding: 50;
+    text-align: right;
+    height: 150;
+  }
+  .body4{
+    padding: 180;
+  }
+  .topic4{
+    font-size: 56pt;
+    width: 1000;
+    padding: 100;
+    text-align: left;
+    height: 150;
+  }
+  .body5{
+    padding: 300;
+  }
