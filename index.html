@@ -5,83 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Environmental Problems and Pollution</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.mi
-n.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             text-align: center;
-        }
-
-        header {
-            position: relative;
-            background-image: radial-gradient(#657688, #4b5d73, #34455f, #1d2e4b, #051937);
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        header video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-        }
-
-        header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: white;
-            opacity: 0.5;
-            z-index: 1;
-        }
-
-        .container {
-            position: absolute;
-            padding: 10px;
-            width: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 10px;
-            z-index: 2;
+            background: linear-gradient(#051937, #010059);
         }
     </style>
 </head>
 
 <body>
-    <!-- video background -->
-    <header>
-        <div class="overlay"></div>
-        <video playsinline autoplay muted loop>
-            <source src="video/Forest.mov">
-        </video>
-    </header>
 
-    <div class="container">
-        <h1>EnviProblem</h1><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide, quantum, inquam, fallare,
-            Torquate. Duo Reges:
-            constructio interrete. Cum audissem Antiochum, Brute, ut solebam, cum M. Que Manilium, ab iisque
-            M. Ergo
-            adhuc, quantum equidem intellego, causa non videtur fuisse mutandi nominis. Eodem modo is enim
-            tibi nemo
-            dabit, quod, expetendum sit, id esse laudabile. Ergo in gubernando nihil, in officio plurimum
-            interest, quo
-            in genere peccetur. Nam memini etiam quae nolo, oblivisci non possum quae volo.</p>
-        <a href="home.html" class="btn btn-warning btn-block" style="font-size: 30px; font-weight: bold;"
-            role="button">เข้าสู่เว็บไซต์</a>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="slide one">
+                <div class="bodyy" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                    <div class="topic">
+                        <b>
+                            <p>ปัญหาสิ่งแวดล้อมคืออะไร?</p>
+                        </b></div>
+                    <hr>
+                    <div class="text">
+                        <p>เป็นปัญหาที่สำคัญในโลกปัจจุบันซึ่งเป็นผลโดยตรงจากการกระทำของมนุษย์</p>
+                        <p>อันเนื่องมาจากความต้องการพื้นฐานและความต้องการความสะดวกสบายในด้านต่าง ๆ </p>
+                    </div>
+                    <b>
+                        <p style="font-size: 24pt;">ไม่ว่าจะเป็น...</p>
+                    </b>
+                </div>
+            </div>
+            <div class="slide two" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="body2" data-aos="fade-left">
+                    <div class="topic2"><b>
+                            <p>ปัญหามลพิษทางดิน</p>
+                        </b></div>
+                </div>
+            </div>
+            <div class="slide three" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="body3" data-aos="fade-right">
+                    <div class="topic3"><b>
+                            <p>ปัญหามลพิษทางอากาศ</p>
+                        </b></div>
+
+                </div>
+            </div>
+            <div class="slide four" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="body4" data-aos="fade-left">
+                    <div class="topic4"><b>
+                            <p>ปัญหามลพิษทางน้ำ</p>
+                        </b></div>
+
+                </div>
+            </div>
+            <div class="slide five">
+                <div class="body5">
+                    <a href="home.html" class="btn btn-warning btn-block" style="font-size: 30px; font-weight: bold;"
+                        role="button">เข้าสู่เว็บไซต์</a>
+                </div>
+
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 400,
+                duration: 1000
+            }
+        );
+    </script>
 </body>
 
 </html>
