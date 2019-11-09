@@ -34,24 +34,46 @@ n.css">
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm bg-dark static-top">
-        <a class="navbar-brand" href="home.html">Logo</a>
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="ground.html">มลพิษทางบก</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="water.html">มลพิษทางน้ำ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="air.html">มลพิษทางอากาศ</a>
-            </li>
-        </ul>
+    <nav>
+        <a href="topic.html"><img src="media/logoWhite.svg" class="logo"></a>
+        <div class="ham">
+            <a class="btn-open" href="#"></a>
+        </div>
     </nav>
-
+    <div class="overlay">
+        <div class="wrap">
+            <ul class="wrap-nav">
+                <li><a href="pollution.html">ปัญหาสิ่งแวดล้อมและมลภาวะ</a>
+                    <ul>
+                        <li><a href="timeline.html">Timeline</a></li>
+                    </ul>
+                </li>
+                <li><a href="ground.html">มลพิษทางบก</a>
+                    <ul>
+                        <li><a href="#">content1</a></li>
+                        <li><a href="#">content2</a></li>
+                        <li><a href="#">content3</a></li>
+                    </ul>
+                </li>
+                <li><a href="water.html">มลพิษทางน้ำ</a>
+                    <ul>
+                        <li><a href="#">content1</a></li>
+                        <li><a href="#">content2</a></li>
+                        <li><a href="#">content3</a></li>
+                    </ul>
+                </li>
+                <li><a href="air.html">มลพิษทางอากาศ</a>
+                    <ul>
+                        <li><a href="#">content1</a></li>
+                        <li><a href="#">content2</a></li>
+                        <li><a href="#">content3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- ปุ่ม To Top -->
-    <a id="button"></a>
+    <a id="toTop" class="groundTop"></a>
 
     <!-- หัวข้อ -->
     <div class="container-fluid head">
