@@ -18,7 +18,9 @@ n.css">
         }
 
         .head {
-            background: lightblue;
+            background: url('media/w3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .examhead {
@@ -125,6 +127,11 @@ n.css">
             transform: translate(-50%, -50%);
             text-align: center;
         }
+
+        div.bg {
+            background: rgb(255, 255, 255,0.6);
+            padding: 20;
+        }
     </style>
 </head>
 
@@ -176,9 +183,11 @@ n.css">
     <div class="container-fluid head">
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
-                <h1 style="font-size: 60px;">มลพิษทางน้ำ</h1>
-                <h6>ปัญหาที่ทำให้เกิดผลเสียต่อสิ่งมีชีวิต เป็นอันตรายต่อสุขภาพของมนุษย์
-                    หรือทำให้คุณภาพสิ่งแวดล้อมในทะเลเสื่อมลง</h6>
+                <div class="bg">
+                    <h1 style="font-size: 65px;">มลพิษทางน้ำ</h1>
+                    <h6 style="font-size: 18px;">ปัญหาที่ทำให้เกิดผลเสียต่อสิ่งมีชีวิต เป็นอันตรายต่อสุขภาพของมนุษย์
+                        หรือทำให้คุณภาพสิ่งแวดล้อมในทะเลเสื่อมลง</h6>
+                </div>
             </div>
         </div>
     </div>

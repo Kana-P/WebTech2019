@@ -15,53 +15,8 @@ n.css">
     <style>
         body {
             text-align: center;
-            color: white;
+            color: black;
             overflow: hidden;
-        }
-
-        header {
-            position: relative;
-            background: white;
-            height: 100%;
-            width: 100%;
-        }
-
-        .overlay {
-            position: fixed;
-            display: block;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: black;
-            opacity: .25;
-            z-index: 1;
-        }
-
-        .container {
-            position: absolute;
-            padding: 10px;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 10px;
-            z-index: 2;
-        }
-
-        h3 {
-            background: pink;
-            width: 200px;
-            height: 200px;
-            padding: 20px;
-            margin: 25px auto 25px auto;
-            cursor: pointer;
-            border-radius: 50%;
-            transition: width 2s;
-        }
-
-        .topic:hover {
-            background: rgb(221, 73, 97);
-            width: 300px;
         }
     </style>
 </head>
@@ -74,22 +29,48 @@ n.css">
             <source src="media/BgSequence.mp4">
         </video>
     </header>-->
+    <div class="container" style="padding: 50;">
+        <div class="topic1" style="width: 250;height: 250; background-color: pink;float: left;
+        padding: 20;" onclick="location.href='pollution.html';">
+            <h2 style="text-align: center;">ปัญหาสิ่งแวดล้อมและมลภาวะ</h2>
+            <div class="text">
+                <p>ปัญหาต่างๆที่เกิดขึ้นในชีวลัยที่มีผลกระทบต่อคุณภาพชีวิต
+                    ทุกปัญหาที่เกิดขึ้นเกี่ยวพันกันอย่างเป็นระบบ</p>
+                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+            </div>
+        </div>
+        <div class="topic2" style="width: 250;height: 250; background-color: pink;float: left;
+        padding: 32;" onclick="location.href='ground.html';">
+            <h2 style="text-align: center;">มลพิษทางดิน</h2>
+            <div class="text1">
+                <p>เกิดจากการปนเปื้อนของสารเคมีและมลพิษต่างๆ ในปริมาณที่สูง
+                    ซึ่งอาจส่งผลกระทบต่อทั้งพืช สัตว์ มนุษย์ และสิ่งแวดล้อม</p>
+                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+            </div>
+        </div>
+        <div class="topic3" style="width: 250;height: 250; background-color: pink;float: left;
+        padding: 32;" onclick="location.href='water.html';">
+            <h2 style="text-align: center;">มลพิษทางน้ำ</h2>
+            <div class="text2">
+                <p>ปัญหาที่ทำให้เกิดผลเสียต่อสิ่งมีชีวิต เป็นอันตรายต่อสุขภาพของมนุษย์
+                    หรือทำให้คุณภาพสิ่งแวดล้อมในทะเลเสื่อมลง</p>
+                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+            </div>
+        </div>
+        <div class="topic4" style="width: 250;height: 250; background-color: pink;float: left;
+        padding: 25;" onclick="location.href='air.html';">
+            <h2 style="text-align: center;">มลพิษทางอากาศ</h2>
+            <div class="text3">
+                <p>ภาวะอากาศที่มีสารเจือปนอยู่ในปริมาณที่สูงกว่าระดับปกติเป็นเวลานานพอที่จะทำให้เกิดอันตรายแก่มนุษย์
+                    สัตว์
+                    พืช</p>
+                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+            </div>
+        </div>
 
-    <div class="container">
-        <div class="p1" onclick="location.href='pollution.html';" style="float: left; background-color:pink; margin-right: 10px;">
-            <h3>ปัญหาสิ่งแวดล้อมและมลภาวะ</h3>
-        </div>
-        <div class="p2" onclick="location.href='ground.html';" style="float: left;  background-color:pink;margin-right: 10px;">
-            <h3>มลพิษทางดิน</h3>
-        </div>
-        <div class="p3" onclick="location.href='water.html';" style="float: left; background-color:pink;margin-right: 10px;">
-            <h3>มลพิษทางน้ำ</h3>
-        </div>
-        <div class="p4" onclick="location.href='air.html';" style="float: left; background-color:pink;margin-right: 10px;">
-            <h3>มลพิษทางอากาศ</h3>
-        </div>
     </div>
-</body>
+
+
 </body>
 
 </html>

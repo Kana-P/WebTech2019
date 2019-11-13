@@ -15,10 +15,13 @@ n.css">
     <style>
         body {
             background-image: linear-gradient(to bottom, #91d5f3, #9cdaf0, #a8deed, #b5e2eb, #c2e6ea);
+
         }
 
         .head {
-            background: burlywood;
+            background: url('media/s1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .examhead {
@@ -27,6 +30,11 @@ n.css">
 
         ::-webkit-scrollbar-thumb {
             background-image: linear-gradient(#5d4421, #6e5732, #7f6b44, #907f56, #a1946a);
+        }
+
+        div.bg {
+            background: rgb(255, 255, 255, 0.6);
+            padding: 20;
         }
     </style>
 </head>
@@ -79,8 +87,10 @@ n.css">
     <div class="container-fluid head">
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
-                <h1 style="font-size: 60px; ">มลพิษทางดิน</h1>
-                <h6>ปัญหาที่ทำให้ดินขาดธาตุอาหารและไม่เหมาะสมต่อการเพาะปลูก</h6>
+                <div class="bg">
+                    <h1 style="font-size: 65px;">มลพิษทางดิน</h1>
+                    <h6 style="font-size: 18px; ">ปัญหาที่ทำให้ดินขาดธาตุอาหารและไม่เหมาะสมต่อการเพาะปลูก</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -136,50 +146,48 @@ n.css">
                 จนในที่สุดไม่อาจปลูกพืชได้อีก</li>
             <li><b>การหักร้างถางป่า</b> เป็นผลทําให้เกิดความเสียหายกับดินได้ทําให้ดินปราศจากพืชปกคลุม
                 หรือไม่มีรากของพืชยึดเหนี่ยว</li>
-    </div>
-    <!-- ตัวอย่างต่างๆ -->
-    <div class="container-fluid examhead">
-        <div class="row h-100">
-            <div class="col-sm-12 my-auto">
-                <h1 style="font-size: 48px;">ตัวอย่างผลกระทบต่างๆ</h1>
+        </div>
+        <!-- ตัวอย่างต่างๆ -->
+        <div class="container-fluid examhead">
+            <div class="row h-100">
+                <div class="col-sm-12 my-auto">
+                    <h1 style="font-size: 48px;">ตัวอย่างผลกระทบต่างๆ</h1>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md example" onclick="location.href='gnd_ex01.html';">
-                <h3>ผลกระทบที่มีต่อมนุษย์</h3>
-                <p>&emsp;ผลกระทบของมลพิษทางดินที่มีต่อมนุษย์มีหลายด้านเนื่องจากสารพิษในดินสามารถถ่ายทอดเข้าสู่ร่างกายมนุษย์ได้ทั้งทางตรงและทางอ้อม
-                    ซึ่งจะส่งผลต่อสุขภาพของมนุษย์ได้ทั้งแบบฉับพลันและเป็นปัญหาในระยะยาว
-                </p><br>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md example" onclick="location.href='gnd_ex01.html';">
+                    <h3>ผลกระทบที่มีต่อมนุษย์</h3>
+                    <p>&emsp;ผลกระทบของมลพิษทางดินที่มีต่อมนุษย์มีหลายด้านเนื่องจากสารพิษในดินสามารถถ่ายทอดเข้าสู่ร่างกายมนุษย์ได้ทั้งทางตรงและทางอ้อม
+                        ซึ่งจะส่งผลต่อสุขภาพของมนุษย์ได้ทั้งแบบฉับพลันและเป็นปัญหาในระยะยาว
+                    </p><br>
+                    <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+                </div>
+                <div class="col-md example" onclick="location.href='gnd_ex02.html';">
+                    <h3>ผลกระทบต่อสัตว์ </h3>
+                    <p>&emsp;มลพิษทางดินมีผลกระทบต่อสัตว์ที่อาศัยอยู่ในดินและหน้าดินในด้านการดำรงชีวิตของสัตว์ต่างๆ
+                        ซึ่งปัญหานี้จะส่งผลไปยังระบบนิเวศ ทำให้ระบบห่วงโซ่อาหารในธรรมชาติถูกทำลาย
+                        เป็นสาเหตุการตายและการสูญพันธุ์ของสิ่งมีชีวิตในแต่ละลำดับชั้นของห่วงโซ่อาหารในที่สุด</p>
+                    <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+                </div>
             </div>
-            <div class="col-md example" onclick="location.href='#';">
-                <h3>ผลกระทบต่อสัตว์ </h3>
-                <p>&emsp;มลพิษทางดินมีผลกระทบต่อสัตว์ที่อาศัยอยู่ในดินและหน้าดินในด้านการดำรงชีวิตของสัตว์ต่างๆ
-                    ซึ่งปัญหานี้จะส่งผลไปยังระบบนิเวศ ทำให้ระบบห่วงโซ่อาหารในธรรมชาติถูกทำลาย
-                    เป็นสาเหตุการตายและการสูญพันธุ์ของสิ่งมีชีวิตในแต่ละลำดับชั้นของห่วงโซ่อาหารในที่สุด</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+            <div class="row">
+                <div class="col-md example" onclick="location.href='#';">
+                    <h3>ผลกระทบต่อสิ่งแวดล้อม</h3>
+                    <p>&emsp;มลพิษทางดินมีผลกระทบต่อสิ่งแวดล้อมได้ทั้งทางอากาศและทางน้ำ
+                        ซึ่งสาเหตุหลักเกิดมากจากการระเหยของสารพิษที่อยู่ในดินขึ้นไปในอากาศแล้วเกิดการสะสมเป็นฝนกรด
+                        เมื่อตกลงแหล่งน้ำก็จะเกิดพิษต่อแหล่งน้ำ</p>
+                    <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
+                </div>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-md example" onclick="location.href='#';">
-                <h3>ผลกระทบต่อสิ่งแวดล้อม</h3>
-                <p>&emsp;มลพิษทางดินมีผลกระทบต่อสิ่งแวดล้อมได้ทั้งทางอากาศและทางน้ำ
-                    ซึ่งสาเหตุหลักเกิดมากจากการระเหยของสารพิษที่อยู่ในดินขึ้นไปในอากาศแล้วเกิดการสะสมเป็นฝนกรด
-                    เมื่อตกลงแหล่งน้ำก็จะเกิดพิษต่อแหล่งน้ำ</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Background Decoration -->
-    <img class="deco" src="media/forest.svg"/>
-        
-    <!-- External Script for To Top Button -->
-    <script src="scripts.js"></script>
+        <!-- Background Decoration -->
+        <img class="deco" src="media/forest.svg" />
+        <!-- External Script for To Top Button -->
+        <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -18,7 +18,9 @@ n.css">
         }
 
         .head {
-            background: lightcyan;
+            background: url('media/a2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .examhead {
@@ -27,6 +29,11 @@ n.css">
 
         ::-webkit-scrollbar-thumb {
             background-image: linear-gradient(#50c2ff, #5dd2ff, #73e1ff, #8eefff, #aafcff);
+        }
+
+        div.bg {
+            background: rgb(255, 255, 255, 0.6);
+            padding: 20;
         }
     </style>
 </head>
@@ -79,8 +86,10 @@ n.css">
     <div class="container-fluid head">
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
-                <h1 style="font-size: 60px;">มลพิษทางอากาศ</h1>
-                <h6>ปัญหาที่ภาวะอากาศที่มีสารเจือปนอยู่ในปริมาณที่สูงกว่าระดับปกติ</h6>
+                <div class="bg">
+                    <h1 style="font-size: 65px;">มลพิษทางอากาศ</h1>
+                    <h6 style="font-size: 18px;">ปัญหาที่ภาวะอากาศที่มีสารเจือปนอยู่ในปริมาณที่สูงกว่าระดับปกติ</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -178,6 +187,7 @@ n.css">
             </div>
         </div>
     </div>
+    <!-- External Script for To Top Button -->
     <!-- Background Decoration -->
     <img class="deco" src="media/city.svg"/>
     <!-- External Script for To Top Button -->
