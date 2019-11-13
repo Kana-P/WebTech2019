@@ -21,19 +21,9 @@ n.css">
 
         header {
             position: relative;
-            background: black;
+            background: white;
             height: 100%;
             width: 100%;
-        }
-
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            transform: translate(-50%, -50%);
         }
 
         .overlay {
@@ -51,49 +41,52 @@ n.css">
         .container {
             position: absolute;
             padding: 10px;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
             z-index: 2;
         }
 
-        .topic {
+        h3 {
             background: pink;
             width: 200px;
             height: 200px;
             padding: 20px;
             margin: 25px auto 25px auto;
             cursor: pointer;
+            border-radius: 50%;
+            transition: width 2s;
+        }
+
+        .topic:hover {
+            background: rgb(221, 73, 97);
+            width: 300px;
         }
     </style>
 </head>
 
 <body>
-    <!-- video background -->
+    <!-- video background 
     <header>
         <div class="overlay"></div>
         <video playsinline autoplay muted loop>
             <source src="media/BgSequence.mp4">
         </video>
-    </header>
+    </header>-->
 
     <div class="container">
-        <img src="media/logoWhite.svg" class="img-fluid" style="max-width: 60%; margin:20px">
-        <h3>คลิกเพื่อดูหัวข้อต่างๆ</h3>
-        <div class="row">
-            <div class="col" onclick="location.href='pollution.html';">
-                <div class="topic">ปัญหาสิ่งแวดล้อมและมลภาวะ</div>
-            </div>
-            <div class="col" onclick="location.href='ground.html';">
-                <div class="topic">มลพิษทางบก</div>
-            </div>
-            <div class="col" onclick="location.href='water.html';">
-                <div class="topic">มลพิษทางน้ำ</div>
-            </div>
-            <div class="col" onclick="location.href='air.html';">
-                <div class="topic">มลพิษทางอากาศ</div>
-            </div>
+        <div class="p1" onclick="location.href='pollution.html';" style="float: left; background-color:pink; margin-right: 10px;">
+            <h3>ปัญหาสิ่งแวดล้อมและมลภาวะ</h3>
+        </div>
+        <div class="p2" onclick="location.href='ground.html';" style="float: left;  background-color:pink;margin-right: 10px;">
+            <h3>มลพิษทางดิน</h3>
+        </div>
+        <div class="p3" onclick="location.href='water.html';" style="float: left; background-color:pink;margin-right: 10px;">
+            <h3>มลพิษทางน้ำ</h3>
+        </div>
+        <div class="p4" onclick="location.href='air.html';" style="float: left; background-color:pink;margin-right: 10px;">
+            <h3>มลพิษทางอากาศ</h3>
         </div>
     </div>
 </body>
