@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Environmental Problems and Pollution</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.mi
-n.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
@@ -15,55 +14,185 @@ n.css">
     <style>
         body {
             text-align: center;
-            color: black;
+            color: white;
             overflow: hidden;
         }
+
+        header {
+            position: relative;
+            background: black;
+            height: 100%;
+            width: 100%;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .overlay {
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: black;
+            opacity: .25;
+            z-index: 1;
+        }
+
+        .wrap {
+            padding: 30px;
+            text-align: center;
+
+        }
+
+        .wrap a {
+            color: #fff;
+        }
+
+        .hover-fx {
+            font-size: 36px;
+            display: inline-block;
+            cursor: pointer;
+            margin: 15px;
+            width: 80px;
+            height: 80px;
+            line-height: 84px;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: 300ms;
+        }
+
+        .hover-fx:after {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            box-sizing: content-box;
+            box-shadow: 0 0 0 3px #fff;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 300ms;
+        }
+
+        .hover-fx:hover {
+            background-color: #fff;
+            color: #00989A;
+        }
+
+        .hover-fx:hover:after {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        h2 {
+            padding: 18;
+        }
+
+        .container {
+            position: absolute;
+            padding: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            z-index: 2;
+        }
+
+        /*.text1 {
+            width: 800;
+            height: 300;
+            border: black solid 1px;
+            position: absolute;
+            left: 390;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        .text2 {
+            width: 800;
+            height: 300;
+            border: black solid 1px;
+            position: absolute;
+            left: 390;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        .text3 {
+            width: 800;
+            height: 300;
+            border: black solid 1px;
+            position: absolute;
+            left: 390;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        .text4 {
+            width: 800;
+            height: 300;
+            border: black solid 1px;
+            position: absolute;
+            left: 390;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        div.topic1:hover .text1 {
+            opacity: 1;
+        }*/
     </style>
 </head>
 
 <body>
-    <div class="container" style="padding: 50;">
-        <div class="topic1" style="width: 250;float: left;
-        padding: 20;" onclick="location.href='pollution.html';">
-            <h4 style="text-align: center;">ปัญหาสิ่งแวดล้อมและมลภาวะ</h4>
-            <!--<div class="text">
-                <p>ปัญหาต่างๆที่เกิดขึ้นในชีวลัยที่มีผลกระทบต่อคุณภาพชีวิต
-                    ทุกปัญหาที่เกิดขึ้นเกี่ยวพันกันอย่างเป็นระบบ</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
-            </div>-->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline autoplay muted loop>
+            <source src="media/BgSequence.mp4">
+        </video>
+    </header>
+    <div class="container">
+        <div class="wrap">
+            <a class="hover-fx">
+                <div class="topic1" onclick="location.href='pollution.html';">
+                    <h2>01</h2>
+                    <h6 style="text-align: center;">ปัญหาสิ่งแวดล้อม</h6>
+                </div>
+            </a>
+            <a class="hover-fx" onclick="location.href='ground.html';">
+                <div class="topic2">
+                    <h2>02</h2>
+                    <h6 style="text-align: center;">มลพิษทางดิน</h6>
+                </div>
+            </a>
+            <a class="hover-fx" onclick="location.href='water.html';">
+                <div class="topic3">
+                    <h2>03</h2>
+                    <h6 style="text-align: center;">มลพิษทางน้ำ</h6>
+                </div>
+            </a>
+            <a class="hover-fx" onclick="location.href='air.html';">
+                <div class="topic4">
+                    <h2>04</h2>
+                    <h6 style="text-align: center;">มลพิษทางอากาศ</h6>
+                </div>
+            </a>
         </div>
-        <div class="topic2" style="width: 250;float: left;
-        padding: 32;" onclick="location.href='ground.html';">
-            <h4 style="text-align: center;">มลพิษทางดิน</h4>
-            <!--<div class="text1">
-                <p>เกิดจากการปนเปื้อนของสารเคมีและมลพิษต่างๆ ในปริมาณที่สูง
-                    ซึ่งอาจส่งผลกระทบต่อทั้งพืช สัตว์ มนุษย์ และสิ่งแวดล้อม</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
-            </div>-->
-        </div>
-        <div class="topic3" style="width: 250;float: left;
-        padding: 32;" onclick="location.href='water.html';">
-            <h4 style="text-align: center;">มลพิษทางน้ำ</h4>
-            <!--<div class="text2">
-                <p>ปัญหาที่ทำให้เกิดผลเสียต่อสิ่งมีชีวิต เป็นอันตรายต่อสุขภาพของมนุษย์
-                    หรือทำให้คุณภาพสิ่งแวดล้อมในทะเลเสื่อมลง</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
-            </div>-->
-        </div>
-        <div class="topic4" style="width: 250;float: left;
-        padding: 25;" onclick="location.href='air.html';">
-            <h4 style="text-align: center;">มลพิษทางอากาศ</h4>
-            <!--<div class="text3">
-                <p>ภาวะอากาศที่มีสารเจือปนอยู่ในปริมาณที่สูงกว่าระดับปกติเป็นเวลานานพอที่จะทำให้เกิดอันตรายแก่มนุษย์
-                    สัตว์
-                    พืช</p>
-                <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
-            </div>-->
-        </div>
-
     </div>
-
-
 </body>
 
 </html>
