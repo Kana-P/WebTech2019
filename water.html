@@ -30,108 +30,6 @@
         ::-webkit-scrollbar-thumb {
             background-image: linear-gradient(#57e5c3, #0ad9d4, #00cbe1, #00bbe7, #3caae4);
         }
-
-        .water1 {
-            width: 300;
-            height: 400;
-            margin: auto;
-            float: left;
-            position: relative;
-            margin-right: 50;
-        }
-
-        .water2 {
-            width: 300;
-            height: 400;
-            float: left;
-            position: relative;
-            margin-right: 50;
-        }
-
-        .water3 {
-            width: 300;
-            height: 400;
-            float: left;
-            position: relative;
-            margin-right: 50;
-        }
-
-        .image {
-            display: block;
-            width: 150%;
-            height: auto;
-        }
-
-        .text2 {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 325px;
-            width: 325px;
-            opacity: 0;
-            transition: .5s ease;
-            border-radius: 50%;
-            background-color: #008CBA;
-        }
-
-        .text3 {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 325px;
-            width: 325px;
-            opacity: 0;
-            transition: .5s ease;
-            border-radius: 50%;
-            background-color: #008CBA;
-        }
-
-        .text4 {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 325px;
-            width: 325px;
-            opacity: 0;
-            transition: .5s ease;
-            border-radius: 50%;
-            background-color: #008CBA;
-        }
-
-        .water1:hover .text2 {
-            opacity: 1;
-        }
-
-        .water2:hover .text3 {
-            opacity: 1;
-        }
-
-        .water3:hover .text4 {
-            opacity: 1;
-        }
-
-        .text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        div.bg {
-            background: rgb(255, 255, 255, 0.6);
-            padding: 20;
-        }
     </style>
 </head>
 
@@ -149,7 +47,6 @@
                 <li><a href="pollution.html">ปัญหาสิ่งแวดล้อมและมลภาวะ</a>
                     <ul>
                         <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="aboutas.html">คณะผู้จัดทำ</a></li>
                     </ul>
                 </li>
                 <li><a href="ground.html">มลพิษทางดิน</a>
@@ -169,7 +66,7 @@
                 <li><a href="air.html">มลพิษทางอากาศ</a>
                     <ul>
                         <li><a href="air_ex01.html">ผลกระทบที่มีต่อมนุษย์</a></li>
-                        <li><a href="air_ex02.html">ผลกระทบที่มีต่อพฤติกรรมมนุษย์</a></li>
+                        <li><a href="air_ex02.html">ผลกระทบที่มีต่อพืช</a></li>
                         <li><a href="air_ex03.html">ผลกระทบที่มีต่อพืช</a></li>
                     </ul>
                 </li>
@@ -193,8 +90,8 @@
     </div>
 
     <!-- เนื้อหา -->
-    <div class="container" style="background-color: lightblue; padding: 22;">
-        <div class="text1">
+    <div class="container">
+        <div style="background: rgba(173, 216, 230, .8); padding: 20;">
             <p>&emsp;น้ำคือปัจจัยสำคัญในการดำรงชีวิตของคนและสิ่งมีชีวิต
                 เป็นแหล่งกำเนิดของสัตว์น้ำและพืชหลากหลายชนิดนอกจากนั้นน้ำยังมีประโยชน์ในด้านเกษตรกรรม อุตสาหกรรม
                 มีประโยชน์สำหรับครัวเรือน ในการดื่มกิน ใช้ประกอบอาหาร หรือใช้ชำระล้างร่างกายและสิ่งสกปรกต่างๆ
@@ -203,83 +100,177 @@
                 คุณสมบัติของน้ำที่เป็นประโยชน์สำหรับมนุษย์และสิ่งมีชีวิตมากที่สุดก็คือ น้ำบริสุทธิ์ สะอาด
                 ปราศจากเชื้อโรคและสารพิษเจือปน<br></p>
         </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2 style="text-align:center;"><b>สาเหตุที่ก่อให้เกิดมลพิษทางน้ำ</b></h2>
-        <div class="water1">
-            <img src="media/wa1.svg " alt="water" class="image">
-            <div class="text2" style="margin-left:62;margin-top: 58;">
-                <div class="text">น้ำทิ้งและสิ่งปฏิกูลจากแหล่งชุมชน เช่น น้ำที่ใช้ซักฟอกทำความสะอาด</div>
+        <br><br>
+        <h3 style="text-align:center;"><b>สาเหตุที่ก่อให้เกิดมลพิษทางน้ำ</b></h3>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <img src="media/wa1.svg">
+                <center>
+                    <p><b>น้ำทิ้งและสิ่งปฏิกูลจากแหล่งชุมชน เช่น น้ำที่ใช้ซักฟอกทำความสะอาด</b></p>
+                </center>
+            </div>
+            <div class="col-sm">
+                <img src="media/wa2.svg">
+                <center>
+                    <p><b>น้ำเสียจากโรงงานอุตสาหกรรม หากโรงงานมีการลักลอบปล่อยออกมา</b></p>
+                </center>
+            </div>
+            <div class="col-sm">
+                <img src="media/wa3.svg">
+                <center>
+                    <p><b>น้ำเสียที่เกิดจากธรรมชาติ อาจเกิดจากการเน่าเสียเมื่อน้ำอยู่ในสภาพนิ่งไม่มีการไหลเวียน</b></p>
+                </center>
             </div>
         </div>
-        <div class="water2">
-            <img src="media/wa2.svg " alt="water" class="image">
-            <div class="text3" style="margin-left:61;margin-top: 58;">
-                <div class="text">น้ำเสียจากโรงงานอุตสาหกรรม หากโรงงานมีการลักลอบปล่อยออกมา</div>
-            </div>
-        </div>
-        <div class="water3">
-            <img src="media/wa3.svg " alt="water" class="image">
-            <div class="text4" style="margin-left:61;margin-top: 58;">
-                <div class="text">น้ำเสียที่เกิดจากธรรมชาติ อาจเกิดจากการเน่าเสียเมื่อน้ำอยู่ในสภาพนิ่งไม่มีการไหลเวียน
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <p style="text-align: center; font-size: 25;">นอกจากนี้มลพิษทางน้ำยังครอบคลุมไปถึงมลพิษทางทะเลอีกด้วย<br></p>
-        <p><b style="font-size: 30;">มลพิษทางทะเล</b> หมายถึง การเพิ่มเติมสิ่งใดๆ ลงในทะเล
+        <br><br>
+        <center>
+            <h3><b>นอกจากนี้มลพิษทางน้ำยังครอบคลุมไปถึงมลพิษทางทะเลอีกด้วย</b></h3>
+        </center>
+        <hr>
+        <p>&emsp;<b style="font-size: 20;">มลพิษทางทะเล</b> หมายถึง การเพิ่มเติมสิ่งใดๆ ลงในทะเล
             ซึ่งน้ำทะเลไม่สามารถที่จะดูดซึมหรือละลายได้และก่อให้เกิด
             ปฏิกิริยาในทางลบขึ้นอันเป็นอันตรายต่อสิ่งมีชีวิตที่อาศัยอยู่ในทะเลหรือใช้ประโยชน์จากทะเล
             การเกิดมลพิษทางทะเลก่อให้เกิดการเปลี่ยนแปลงต่อสิ่งแวดล้อมในทะเลที่ผิดไปจากธรรมชาติ
-            ทำให้เกิดผลกระทบต่อระบบนิเวศในทะเล <br>
-            &emsp;ทะเลและชายฝั่ง เป็นแหล่งทรัพยากรธรรมชาติที่มีความหลากหลายและมีคุณค่ามากมาย
+            ทำให้เกิดผลกระทบต่อระบบนิเวศในทะเล</p>
+        <p>&emsp;ทะเลและชายฝั่ง เป็นแหล่งทรัพยากรธรรมชาติที่มีความหลากหลายและมีคุณค่ามากมาย
             แต่ในปัจจุบันแหล่งทรัพยากรชายฝั่งของทะเลเสื่อมโทรมอย่างมาก
             ซึ่งมีสาเหตุสำคัญมาจากการพัฒนาด้านเศรษฐกิจอย่างรวดเร็วบริเวณชายฝั่ง ส่งผลให้มีการใช้ทรัพยากรอย่างฟุ่มเฟือย
-            โดยไม่คำนึงถึงความเสื่อมโทรมที่จะเกิดขึ้นกับทรัพยากรธรรมชาติและสิ่งแวดล้อม<br>
-            <b style="font-size: 20;">สาเหตุส่วนใหญ่ที่ทำให้เกิดมลพิษทางทะเล ได้แก่</b><br>
-            <b>&emsp;1. มลพิษจากแหล่งบนบก</b> ที่เกิดมาจากการปล่อยน้ำเสียของแหล่งชุมชน โรงงานอุตสาหกรรม
-            และการเกตรกรรม<br>
-            <b>&emsp;2. สารมลพิษจากเรือ</b>
-            อาจเกิดจากการรั่วของน้ำมันจากเรือลงสู่ทะเลหรือของเสียที่เรือปล่อยลงสู่ทะเล<br>
-            <b>&emsp;3. มลพิษจากกิจกรรมที่พื้นดินใต้ท้องทะเล</b> <br>
-            <b>&emsp;4. มลพิษจากการนำของเสียไปเททิ้งทะเล</b>
-        </p>
-    </div>
-
-    <!-- ตัวอย่างต่างๆ -->
-    <div class="container">
-        <div class="container-fluid examhead">
-            <div class="row h-100">
-                <div class="col-sm-12 my-auto">
-                    <h1 style="font-size: 48px;">ตัวอย่างผลกระทบต่างๆ</h1>
+            โดยไม่คำนึงถึงความเสื่อมโทรมที่จะเกิดขึ้นกับทรัพยากรธรรมชาติและสิ่งแวดล้อม</p>
+        <b style="font-size: 20;">สาเหตุส่วนใหญ่ที่ทำให้เกิดมลพิษทางทะเล ได้แก่</b><br>
+        <ol>
+            <li><b>มลพิษจากแหล่งบนบก</b> ที่เกิดมาจากการปล่อยน้ำเสียของแหล่งชุมชน โรงงานอุตสาหกรรม
+                และการเกตรกรรม</li>
+            <li><b>สารมลพิษจากเรือ</b>
+                อาจเกิดจากการรั่วของน้ำมันจากเรือลงสู่ทะเลหรือของเสียที่เรือปล่อยลงสู่ทะเล</li>
+            <li><b>มลพิษจากกิจกรรมที่พื้นดินใต้ท้องทะเล</b></li>
+            <li><b>มลพิษจากการนำของเสียไปเททิ้งทะเล</b></li>
+        </ol><br>
+        <center>
+            <h3><b>ตัวอย่างผลกระทบต่างๆ</b></h3>
+        </center>
+        <hr>
+        <!-- Link Button -->
+        <div class="row">
+            <div class="col-sm" onclick="location.href='water_ex01.html';">
+                <div class="linkButton"
+                    style="background-image: linear-gradient(to left top, #39f2f5, #59efef, #6fece9, #81e9e4, #8fe6df);">
+                    <div class=" row">
+                        <div class="col-sm">
+                            <center><img src="media/group.svg" style="width: 150px; padding: 20px; margin: auto;" />
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm my-auto">
+                            <center>
+                                <h1><b>ผลกระทบที่มีต่อมนุษย์</b></h1>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm" onclick="location.href='water_ex02.html';">
+                <div class="linkButton"
+                    style="background-image: linear-gradient(to left top, #2a9c88, #339991, #429597, #529099, #628c97);">
+                    <div class=" row">
+                        <div class="col-sm">
+                            <center><img src="media/microplastics.svg" style="width: 150px; padding: 20px; margin: auto;" />
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm my-auto">
+                            <center>
+                                <h1><b>ผลกระทบจากไมโครพลาสติก</b></h1>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm" onclick="location.href='water_ex03.html';">
+                <div class="linkButton"
+                    style="background-image: linear-gradient(to left top, #b0529f, #b05aa5, #b063ab, #b06ab1, #b072b6);">
+                    <div class="row">
+                        <div class="col-sm my-auto">
+                            <center><img src="media/brain.svg" style="width: 150px; padding: 20px; margin: auto;" />
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm my-auto">
+                            <center>
+                                <h1><b>ผลกระทบจากโรคมินามาตะ</b></h1>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md example" onclick="location.href='water_ex01.html';">
                 <h3>ผลกระทบต่อมนุษย์</h3>
                 <p>น้ำเสียที่ถูกลักลอบปล่อยออกมาจากโรงงาน โดยที่ยังมีสารพิษอันตรายอยู่และยังไม่ได้บำบัดให้มีคุณภาพที่ดี
                     เมื่อถูกปล่อยสู่แม่น้ำ ลำคลอง จะส่งผลกระทบต่อชีวิตที่อาศัยใกล้ๆแหล่งน้ำนั้นๆ</p><br>
                 <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
             </div>
-            <div class="col-md example" onclick="location.href='water_ex02.html';">
+            <div class="col-md example" onclick="location.href='#';">
                 <h3>ผลกระทบจากไมโครพลาสติก</h3>
                 <p>รู้หรือไม่ว่าขยะพลาสติกเพียงร้อยละ 9 เท่านั้นที่ถูกนำไปรีไซเคิล ร้อยละ 12
                     ถูกนำไปเผาซึ่งก่อให้เกิดมลพิษทางอากาศ และที่เหลือร้อยละ 79 ตกค้างอยู่ในสิ่งแวดล้อม
                     และหลุดเข้าข่ายใยอาหารในระบบนิเวศ</p>
                 <p class="readmore">คลิกเพื่ออ่านข้อมูลเพิ่มเติม</p>
             </div>
-        </div>
+        </div> -->
+
+
     </div>
-    <div class="footer" style="background-color: rgb(143, 228, 178); height: 100;text-align: center;padding: 20;">
-        <p>© 2019 สาระน่ารู้เพิ่มเติมเกี่ยวกับปัญหาสิ่งแวดล้อมและมลภาวะ | Web Technology Project (2019)</p>
-    </div>
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col-sm my-auto">
+                <div>
+                    <img src="media/logo.png" style="width: 300px; height: auto; margin: 0; padding: 0;" />
+                    <p>ปัญหาสิ่งแวดล้อม เป็นปัญหาที่สำคัญในโลกปัจจุบันซึ่งเป็นผลโดยตรงจากการกระทำของมนุษย์
+                        อันเนื่องมาจากความต้องการพื้นฐานและความต้องการความสะดวกสบายในด้านต่างๆ
+                        ไม่ว่าจะเป็นปัญหามลพิษทางดิน, ทางน้ำ, หรือทางอากาศ</p>
+                </div>
+            </div>
+            <div class="col-sm my-auto">
+                <h4 style="text-decoration: underline;">คลิกหัวข้อที่สนใจ</h4>
+                <div class="wrap">
+                    <a class="hover-fx">
+                        <div class="topic1" onclick="location.href='pollution.html';">
+                            <img src="media/planet-earth.svg" style="width:30px;" />
+                            <h6 style="text-align: center;">ปัญหาสิ่งแวดล้อม</h6>
+                        </div>
+                    </a>
+                    <a class="hover-fx" onclick="location.href='ground.html';">
+                        <div class="topic2">
+                            <img src="media/green-tea.svg" style="width:30px;" />
+                            <h6 style="text-align: center;">มลพิษทางดิน</h6>
+                        </div>
+                    </a>
+                    <a class="hover-fx" onclick="location.href='water.html';">
+                        <div class="topic3">
+                            <img src="media/drop.svg" style="width:30px;" />
+                            <h6 style="text-align: center;">มลพิษทางน้ำ</h6>
+                        </div>
+                    </a>
+                    <a class="hover-fx" onclick="location.href='air.html';">
+                        <div class="topic4">
+                            <img src="media/wind.svg" style="width:30px;" />
+                            <h6 style="text-align: center;">มลพิษทางอากาศ</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><br>
+        <center><a href="aboutus.html" class="btn btn-danger btn-rounded ">คณะผู้จัดทำ</a></center><br>
+        <div class="footer-copyright text-center py-3">© 2019 สาระน่ารู้เพิ่มเติมเกี่ยวกับปัญหาสิ่งแวดล้อมและมลภาวะ
+            |
+            Web Technology Project (2019)</div>
+    </footer>
     <!-- Background Decoration -->
     <img class="deco" src="media/sea.svg" />
     <!-- External Script for To Top Button -->
