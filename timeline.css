@@ -368,7 +368,7 @@ body {
     background-color: white;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 20%;
 }
 
 
@@ -378,7 +378,7 @@ body {
     padding: 10px 50px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 69%;
 }
 
 
@@ -408,7 +408,7 @@ body {
 /* Place the container to the right */
 
 .right {
-    left: 25%;
+    left: 5%;
 }
 
 
@@ -466,7 +466,7 @@ body {
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
     .timeline::after {
-        left: 31px;
+        left: 50px;
     }
     /* Full-width containers */
     .container {
@@ -484,7 +484,7 @@ body {
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        left: 8%;
     }
     /* Make all right containers behave like the left ones */
     .right {

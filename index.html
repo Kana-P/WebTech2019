@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Environmental Problems and Pollution</title>
+    <link rel="shortcut icon" href="media/icon.png" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -18,12 +19,69 @@
     <style>
         html {
             scroll-behavior: smooth;
-            
         }
-
         body {
             text-align: center;
-            background: linear-gradient(#051937,#051937,#ecaf75,#96969c,#727274,#2c5592,#7cc4ee,#158154);
+            background: linear-gradient(#051937, #051937, #ecaf75, #96969c, #727274, #2c5592, #7cc4ee, #158154);
+        }
+        @media screen and (max-width:1000px) {
+            div.topic,
+            div.topic2 {
+                font-size: 45;
+            }
+            div.topic3 {
+                font-size: 45;
+                padding: 50;
+            }
+            div.topic4 {
+                font-size: 45;
+                padding: 50;
+            }
+            div.text {
+                font-size: 20;
+            }
+        }
+        @media screen and (max-width:670px) {
+            div.topic,
+            div.topic2 {
+                font-size: 35;
+                text-align: center;
+            }
+            div.topic3 {
+                font-size: 35;
+                padding: 50;
+            }
+            div.topic4 {
+                font-size: 35;
+                padding: 50;
+            }
+            div.text {
+                font-size: 20;
+            }
+            .btn {
+                width: 300px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            div.topic,
+            div.topic2 {
+                font-size: 25;
+                text-align: center;
+            }
+            div.topic3 {
+                font-size: 25;
+                padding: 50;
+            }
+            div.topic4 {
+                font-size: 25;
+                padding: 50;
+            }
+            div.text {
+                font-size: 15;
+            }
+            .btn {
+                width: 300px;
+            }
         }
     </style>
 </head>
@@ -72,12 +130,11 @@
 
                 </div>
             </div>
-            <div class="slide five">
-                <div class="body5">
-                    <a href="topic.html" class="btn btn-warning btn-block" style="font-size: 30px; font-weight: bold;"
-                        role="button">เข้าสู่เว็บไซต์</a>
+            <div class="row">
+                <div class="col"><br>
+                    <center><a href="topic.html" class="btn btn-warning btn-block" style="font-size: 30px; font-weight: bold;"
+                        role="button">เข้าสู่เว็บไซต์</a></center><br>
                 </div>
-
             </div>
         </div>
     </div>
@@ -87,7 +144,7 @@
     <script>
         AOS.init(
             {
-                offset: 400,    
+                offset: 400,
                 duration: 1000
             }
         );
